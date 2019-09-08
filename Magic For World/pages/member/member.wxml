@@ -1,0 +1,7 @@
+<view class="member">
+   <view class="userInfo" wx:click="getUserinfo">
+    <image style="width: 50px; height: 50px; border-radius:50%; background-color: #eeeeee;" mode="{{item.mode}}" src="{{photo}}"></image>
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" wx:if="{{show}}">授权登录</button>
+    <text>{{nickname}}</text>
+   </view>
+</view>

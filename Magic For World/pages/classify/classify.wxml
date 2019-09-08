@@ -1,0 +1,28 @@
+<!--pages/classify/classify.wxml-->
+<view class="classify">
+  <view>
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" bind:search="bindSearch" field-class="input"/>
+  </view>
+
+
+   <!--分类导航栏-->
+  <scroll-view class='left-navbar' scroll-y="true">
+    <view wx:for="{{screenArray}}" class="{{ currentTab == index ? 'active' : '' }}" wx:key="unique" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" id="{{index}}" data-screenId="{{item.screenId}}">{{item}}
+    </view>
+  </scroll-view>
+ 
+  <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}">
+    <!--顶部图片-->
+    <view class="goods-banner">
+      <image class="img-banner" src="{{childrenArray.showImageUrl}}" wx:if="{{childrenArray.showImageUrl}}" mode="scaleToFill"></image>
+    </view>
+    <!--商品展示-->
+    <view class="goods-list">
+      <view class="goods-list-active"  wx:for="{{childrenArray}}" wx:key="index">
+        <image class="img" src="{{item.src}}"></image>
+        <view class="goods-title">{{item.title}}</view>
+      </view>
+    </view>
+
+  </scroll-view>
+</view>

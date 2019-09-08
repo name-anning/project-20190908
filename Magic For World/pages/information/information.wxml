@@ -1,0 +1,7 @@
+<view class="information">
+  <view wx:for="{{goods}}" wx:key="{{index}}" class="goods">
+    <image src="{{goods[index].src}}"></image>
+    <text>{{goods[index].title}}</text>
+    <text>￥{{goods[index].price}}</text>
+  </view>
+</view>

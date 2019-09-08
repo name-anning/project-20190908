@@ -1,0 +1,27 @@
+<view class="service">
+  <text class="h1">请完成一下2步操作</text>
+  <text>1.允许授权获取微信个人信息</text>
+  <text>2.允许授权获取手机号信息</text>
+  
+  <view class="button">
+    <view>
+      <van-button custom-class="van-button" type="primary" size="large" bindtap="showPopup">授权获取用户个人信息</van-button>
+      <van-button custom-class="van-button" type="primary" size="large" color="#ccc" disabled >允许授权用户手机号信息</van-button>
+    </view>
+    <van-popup custom-class="popup" show="{{ show }}" position="bottom"
+  overlay="{{ true }}" bind:close="onClose" >
+      <view class="popup">
+        <text class="huge">申请获取你的昵称、头像等基本信息</text>
+        <view>
+          <open-data type="userAvatarUrl" class="userImg" />
+          <open-data type="userNickName" lang="zh_CN"></open-data>
+        </view>
+        <view class="button">
+          <van-button color="#ccc" bindtap="cancelPopup" custom-class="getButton">取消</van-button>
+          <van-button color="#393" bindtap="getUserInfo" custom-class="getButton">允许</van-button>
+        </view>
+      </view>
+    </van-popup>
+  </view>
+  
+</view>

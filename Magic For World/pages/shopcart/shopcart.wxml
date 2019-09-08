@@ -1,0 +1,25 @@
+<view class="shopcart">
+  <view wx:for="{{goods}}" wx:key="{{index}}" class="goodList">
+    <image src="{{item.src}}"></image>
+    <view class="shopcart-stepper">
+      <text>{{item.title}}</text>
+      <text>￥{{item.price}}</text>
+      <van-stepper
+        value="{{ 1 }}"
+        integer
+        min="1"
+        max="40"
+        step="1"
+        bind:change="onChange"
+        custom-class="change"
+        input-class="test"
+        plus-class="test"
+        minus-class="test"
+      />
+    </view>
+    <view class="shopcart-button">
+      <van-button type="danger" size="normal" custom-class="button-size">删除</van-button>
+      <van-button icon="star-o" type="primary" custom-class="button-size">收藏</van-button>
+    </view>
+  </view>
+</view>

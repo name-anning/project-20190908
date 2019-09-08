@@ -1,0 +1,5 @@
+.vip .banner image{
+  width: 200%;
+  position: absolute;
+  left: -50%;
+}

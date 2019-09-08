@@ -1,0 +1,59 @@
+/* pages/classify/classify.wxss */
+.input{
+  padding: 0px 5px;
+  background: rgb(224, 221, 221);
+  border-radius: 10px;
+}
+
+.left-navbar{
+  position:absolute;
+  left:0;
+  width:25%;
+  height:90%;
+  background-color:#eee;
+  font-size:15px;
+}
+.left-navbar view{
+  height:80rpx;
+  line-height: 80rpx;
+  text-align:center;
+}
+.active{
+  background-color:#FFF;
+  color:red;
+  font-size:17px;
+}
+#right{
+  position:absolute;
+  right:0;
+  width:75%;
+  height:90%;
+}
+.img-banner{
+  height:150rpx;
+  width:100%;
+}
+.goods-list{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.goods-list-active{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 3px 6px;
+  background: #eee;
+}
+.goods-title{
+  font-size:12px;
+  margin: 0 15%;
+}
+.img{
+  width:80%;
+  height:180px;
+  margin: 0 10%;
+}

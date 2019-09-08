@@ -1,0 +1,29 @@
+/* pages/shopcart/shopcart.wxss */
+.shopcart{
+  margin-top: 20px;
+}
+.goodList{
+  margin: 5px 2%;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+}
+.goodList .shopcart-stepper{
+  text-align: center;
+  flex: 1;
+  margin: 30px 2px;
+}
+.goodList image{
+  width: 30%;
+  height: 150px;
+}
+.goodList .shopcart-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-size{
+  width: 100px;
+  margin: 10px 0;
+}

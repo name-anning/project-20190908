@@ -1,0 +1,20 @@
+.information{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.goods{
+  width: 48%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.goods image{
+  width: 100%;
+}
+.goods text{
+  width: 90%;
+  margin: 2% 5%;
+  text-overflow: ellipsis;
+}

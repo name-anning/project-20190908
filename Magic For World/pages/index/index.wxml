@@ -1,0 +1,55 @@
+<view class="input">
+  <image src="../../images/sousuo.png" />
+  <input type="text" placeholder="请搜索" />
+</view>
+
+<van-tabs active="{{ active }}" bind:click="onClick" line-width="{{0}}" color="#000">
+  <van-tab title="会员中心"></van-tab>
+  <van-tab title="分类"></van-tab>
+  <van-tab title="购物车"></van-tab>
+  <van-tab title="绑定导购"></van-tab>
+</van-tabs>
+
+<swiper indicator-dots="{{indicatorDots}}" indicator-color="#fff" circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+  <view wx:for="{{[0,1]}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{imgUrls[item].url}}" class="slide-image banner"/>
+    </swiper-item>
+  </view>
+</swiper>
+
+<view class="nav">
+  <view class="nav_icon">
+    <van-icon name="bookmark-o" color="#333" size="30px"/>
+    <text>早秋新品</text>
+  </view>
+  <view class="nav_icon">
+    <van-icon name="hot-o" color="#333" size="30px"/>
+    <text>明星同款</text>
+  </view>
+  <view class="nav_icon">
+    <van-icon name="new-arrival-o" color="#333" size="30px"/>
+    <text>周末上新</text>
+  </view>
+  <view class="nav_icon">
+    <van-icon name="points" color="#333" size="30px"/>
+    <text>积分商城</text>
+  </view>
+</view>
+
+<view class="image">
+  <image src="{{imglist[0].src}}"></image>
+  <image src="{{imglist[1].src}}"></image>
+</view>
+
+<swiper circular="true" interval="{{interval}}" duration="{{duration}}" display-multiple-items="6" class="swiper2">
+  <view wx:for="{{[2,3,4,5,6,7]}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{imgUrls[item].url}}" class="slide-image"/>
+    </swiper-item>
+  </view>
+</swiper>
+
+<view wx:for="{{imglist}}" wx:key="{{index}}" class="imglist">
+  <image src="{{imglist[index].src}}"></image>
+</view>

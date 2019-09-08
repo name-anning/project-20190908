@@ -1,0 +1,8 @@
+<view class="vip">
+  <view class="banner">
+    <image src="{{src}}"></image>
+  </view>
+  <view class="login">
+    <image></image>
+  </view>
+</view>

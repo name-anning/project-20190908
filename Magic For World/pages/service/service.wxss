@@ -1,0 +1,36 @@
+.service{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+.server text{
+  color: #333;
+  margin: 2px 0;
+}
+.service .h1{
+  font-weight: bold;
+  margin: 10px 0;
+}
+.button{
+  margin: 20px 0;
+}
+.button .van-button{
+  margin: 3px 0;
+}
+.popup{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 5% 3.5%;
+}
+.huge{
+  font-size: 20px;
+  font-weight: bold;
+}
+.getButton{
+  width: 46%;
+}
+.popup .userImg{
+  width: 10px;
+  height: 10px;
+}
